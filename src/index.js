@@ -45,7 +45,7 @@ function decode(expr) {
     let exprArray = expr.split(/(.{10})/).filter(O=>O);
 
 //кодируем в морзе - в задании указано 10 обозначает точку ( .), 11 обозначает тире ( -), 10 шт * будет пробел - меняем в цикле
-for(let i=0; i < exprArr.length; i++) {
+for(let i=0; i < exprArray.length; i++) {
     exprArray[i] = exprArray[i].replace(/10/g, ".").replace(/11/g, "-").replace(/0/g, "").replace(/\*{10}/g, " ");
 }
  // далее код морзе меняем на символы из MORSE_TABLE 
