@@ -52,7 +52,7 @@ for(let i=0; i < exprArray.length; i++) {
  let result = [];
  for(let i=0; i < exprArray.length; i++) {
  for(const j in MORSE_TABLE) {
-     if (exprArray[i] === keys)  result[i] = MORSE_TABLE[j];
+     if (exprArray[i] === j)  result[i] = MORSE_TABLE[j];
      if (exprArray[i] === ' ') result[i] = ' ';
  }
  }
